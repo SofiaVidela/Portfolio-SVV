@@ -1,1 +1,90 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&family=Roboto+Slab:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.fondo {
+    padding: 20px;
+    background-color: #7B9C94;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+nav, footer {
+    width: 100%;
+    background-color: #212529;
+    box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.14), 0 6px 2px -4px rgba(0, 0, 0, 0.2), 0 2px 10px 1px rgba(0, 0, 0, 0.12);
+}
+footer{
+    height: 130px;
+}
+
+.sv-casipie {
+    background-color: #212529;
+    height: 100px;
+}
+
+.sv-img {
+    border-radius: 10px;
+    opacity: 0.85;
+    box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.14), 0 6px 2px -4px rgba(0, 0, 0, 0.2), 0 2px 10px 1px rgba(0, 0, 0, 0.12);
+}
+
+.sv-hr {
+    border: 1.5px solid #F0F0E9;
+}
+
+svg {
+    color: #F0F0E9;
+}
+
+svg:hover {
+    transition: 0.3s;
+    color: #7E5F86;
+    scale: 140%;
+    cursor: pointer;
+}
+
+h2, h5 {
+    font-family: 'Raleway', sans-serif;
+}
+
+p {
+    font-family: 'Roboto Slab', serif;
+}
+
+.sv-tipo1 {
+    font-family: 'Raleway', sans-serif;
+    color: #F0F0E9;
+}
+
+.sv-tipo2 {
+    font-family: 'Roboto Slab', serif;
+    color: #F0F0E9;
+}
+
+.background-oscuro {
+    border: none;
+    background: #1F3D40;
+    box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.14), 0 6px 2px -4px rgba(0, 0, 0, 0.2), 0 2px 10px 1px rgba(0, 0, 0, 0.12);
+}
+
+.background-intermedio {
+    background: #7E5F86;
+    box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.14), 0 6px 2px -4px rgba(0, 0, 0, 0.2), 0 2px 10px 1px rgba(0, 0, 0, 0.12);
+}
+
+.background-claro {
+    background: #F0F0E9;
+    box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.14), 0 6px 2px -4px rgba(0, 0, 0, 0.2), 0 2px 10px 1px rgba(0, 0, 0, 0.12);
+}

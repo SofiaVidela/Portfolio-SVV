@@ -1,0 +1,8 @@
+.sv-background{
+    background-image:url(src\assets\skill.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sv-background-element{
+    background-color: rgba(197, 190, 190, 0.486);
+}
