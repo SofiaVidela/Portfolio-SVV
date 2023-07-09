@@ -4,20 +4,28 @@
 * {
     margin: 0;
     padding: 0;
+
 }
 
-.fondo {
-    padding: 20px;
-    background-color: #7B9C94;
+:root {
+    ---bs-body-bg-oscuro: #212529;
+    ---bs-body-bg-claro: #7B9C94;
+    ---bs-color-principal: #7B9C94;
+    ---bs-color-acento:#7E5F86 ;
+  }
+.body {
+        background-color: #7B9C94;
 }
 
-section {
+article {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 500px;
     padding: 20px;
     border-radius: 10px;
+    width: 75%;
+    float: right;
 }
 
 nav, footer {
@@ -25,13 +33,33 @@ nav, footer {
     background-color: #212529;
     box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.14), 0 6px 2px -4px rgba(0, 0, 0, 0.2), 0 2px 10px 1px rgba(0, 0, 0, 0.12);
 }
+nav{
+    height: 80px;
+}
 footer{
     height: 130px;
 }
+aside .list-group-item.active{
+    background-color: var(---bs-color-acento);
+    border-color: var(---bs-color-acento);
+}
+aside{
+position: fixed;
+top: 150px;
+margin: 3%;
+border-radius: 10px;
+}
 
-.sv-casipie {
+.row>aside>div{
+    width: 6%;
     background-color: #212529;
-    height: 100px;
+    align-items: center;
+    box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.14), 0 6px 2px -4px rgba(0, 0, 0, 0.2), 0 2px 10px 1px rgba(0, 0, 0, 0.12);
+}
+.row>aside>div a{
+    text-align: center;
+    background-color: #212529;
+    border:none;
 }
 
 .sv-img {
@@ -49,6 +77,13 @@ svg {
 }
 
 svg:hover {
+    transition: 0.3s;
+    color: #7E5F86;
+    scale: 140%;
+    cursor: pointer;
+}
+
+.list-group-item-action  svg:hover,.list-group-item-action  svg:active{
     transition: 0.3s;
     color: #7E5F86;
     scale: 140%;
@@ -84,7 +119,4 @@ p {
     box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.14), 0 6px 2px -4px rgba(0, 0, 0, 0.2), 0 2px 10px 1px rgba(0, 0, 0, 0.12);
 }
 
-.background-claro {
-    background: #F0F0E9;
-    box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.14), 0 6px 2px -4px rgba(0, 0, 0, 0.2), 0 2px 10px 1px rgba(0, 0, 0, 0.12);
-}
+
