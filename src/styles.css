@@ -4,7 +4,11 @@
 * {
     margin: 0;
     padding: 0;
-
+}
+.row{
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 :root {
@@ -46,12 +50,12 @@ aside .list-group-item.active{
 aside{
 position: fixed;
 top: 150px;
-margin: 3%;
+margin: 7%;
 border-radius: 10px;
 }
 
 .row>aside>div{
-    width: 6%;
+    width: 5%;
     background-color: #212529;
     align-items: center;
     box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.14), 0 6px 2px -4px rgba(0, 0, 0, 0.2), 0 2px 10px 1px rgba(0, 0, 0, 0.12);
@@ -119,4 +123,32 @@ p {
     box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.14), 0 6px 2px -4px rgba(0, 0, 0, 0.2), 0 2px 10px 1px rgba(0, 0, 0, 0.12);
 }
 
+@media screen and (max-width:992px) {
+    article {
+        width: 85%;
+    }
+    aside{
+        margin: 3%;
+    }
 
+    .row>aside{
+        position: fixed;
+        bottom: 45px;
+        top: auto;
+        display: flex;
+        justify-content: center;
+        z-index: 100;
+    }
+    .row>aside>div{
+        width: 40%;
+    }
+    aside>.list-group{
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        border-radius: 10px;
+    }
+    .row>aside>.list-group .list-group-item{
+        border-radius: 10px;
+    }
+}
