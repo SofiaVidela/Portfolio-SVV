@@ -1,3 +1,14 @@
+.accordion-item .row{
+    width: auto;
+}
+#carouselEntidadEducativa{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
 .sv-logo {
     max-height: 3em;
 }
@@ -29,6 +40,9 @@
 
 .accordion-button:not(.collapsed)::after {
     background-image: var(--bs-accordion-btn-icon);
+}
+.carousel-indicators {
+    position: initial;
 }
 
 @media(max-width:1000px) {
