@@ -10,7 +10,7 @@
     flex-wrap: wrap;
 }
 .sv-logo {
-    max-height: 3em;
+    height: 2em;
 }
 
 .accordion-button:not(.collapsed), .accordion-button:focus {
