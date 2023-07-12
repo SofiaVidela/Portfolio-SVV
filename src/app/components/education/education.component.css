@@ -48,7 +48,7 @@
 @media(max-width:1000px) {
     .sv-logo {
         transition: 0.4s;
-        max-height: 1em;
+        height: 1em;
     }
 
 }
