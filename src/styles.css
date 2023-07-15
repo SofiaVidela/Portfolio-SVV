@@ -6,7 +6,7 @@
     padding: 0;
 }
 
-.row,.row .tarjeta {
+.row, .row .tarjeta {
     width: 100%;
     margin-left: 0;
     margin-right: 0;
@@ -30,11 +30,14 @@
 .color-claro {
     color: var(---bs-body-bg-claro);
 }
+
 .color-claro2 {
     color: var(---bs-color-acento1);
 }
 
 .body {
+    display: flex;
+    justify-content: space-evenly;
     background-color: var(---bs-color-principal);
 }
 
@@ -47,6 +50,7 @@ article {
     border-radius: 10px;
     width: 75%;
     float: right;
+    margin-right: 7%;
 }
 
 section {
@@ -126,6 +130,7 @@ aside {
 .sv-hr-claro {
     border: 1.5px solid var(---bs-color-principal);
 }
+
 .sv-hr-oscuro {
     border: 1.5px solid var(---bs-color-bg);
 }
@@ -151,9 +156,11 @@ svg:hover {
 h2, h5 {
     font-family: 'Raleway', sans-serif;
 }
-h6 a{
+
+h6 a {
     text-decoration: none;
 }
+
 p {
     font-family: 'Roboto Slab', serif;
     text-align: justify;
@@ -180,6 +187,7 @@ p {
     box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.14), 0 6px 2px -4px rgba(0, 0, 0, 0.2), 0 2px 10px 1px rgba(0, 0, 0, 0.12);
     border-radius: 10px;
 }
+
 .background-claro {
     border: none;
     background: var(---bs-body-bg-claro);
@@ -189,7 +197,22 @@ p {
 
 @media screen and (max-width:992px) {
     article {
-        width: 85%;
+        width: 100%;
+        margin-right: 0;
+    }
+#article-perfil, #article-educacion, #article-contacto{
+    border-radius: 0;
+}
+#scroll{
+    padding: 0;
+
+}
+#article-contacto{
+    margin-bottom: 0;
+}
+    article .row {
+        margin: 0;
+        padding: 0;
     }
 
     section {
@@ -202,7 +225,7 @@ p {
 
     .row>aside {
         position: fixed;
-        bottom: 45px;
+        bottom: 75px;
         top: auto;
         display: flex;
         justify-content: center;
@@ -210,7 +233,7 @@ p {
     }
 
     .row>aside>div {
-        width: 40%;
+        width: 60%;
     }
 
     aside>.list-group {
